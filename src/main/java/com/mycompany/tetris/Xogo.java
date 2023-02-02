@@ -5,7 +5,9 @@
 package com.mycompany.tetris;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.GridLayout;
+import java.awt.PopupMenu;
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -20,9 +22,39 @@ public class Xogo extends javax.swing.JFrame {
     /**
      * Creates new form Xogo
      */
+    
+    
+     public void xerarNovaFicha(){
+        FichaBarra fichaB= new FichaBarra();
+      
+        for(int a=0;a<fichaB.cadradosBarra.size();a++)
+         fichaB.cadradosBarra.get(a).IblCadrado=new JLabel();
+     
+       
+
+        }
+    
     public Xogo()   {
         initComponents();
-       jPanel1.setLayout(new GridLayout(20,10));
+       
+      
+ 
+    
+     
+      /*cadrado1.IblCadrado=new JLabel();
+      cadrado1.x=135;
+      cadrado1.y=0;
+      Border borde;
+      borde=BorderFactory.createLineBorder(Color.RED);
+      cadrado1.IblCadrado.setBorder(borde);
+      cadrado1.IblCadrado.setBackground(Color.red);
+      cadrado1.IblCadrado.setOpaque(true);
+     cadrado1.IblCadrado.setSize(30,30);
+     cadrado1.IblCadrado.setLocation(cadrado1.x,cadrado1.y);*/
+      
+     /* FichaBarra cadrado2.add(cadrado1);*/
+      
+      /*jPanel1.setLayout(new GridLayout(20,10));
         for(int a=0;a<20*10;a++){
         //Con paneles
         
@@ -32,23 +64,36 @@ public class Xogo extends javax.swing.JFrame {
         borde=BorderFactory.createLineBorder(Color.BLACK);
         panel.setBorder(borde);
         add(panel);*/
+        
         //Con label
         
-        JLabel label=new JLabel();
+     /*   JLabel label=new JLabel();
         label.setBackground(Color.GRAY);
         Border borde;
         
         borde=BorderFactory.createLineBorder(Color.BLACK);
         label.setBorder(borde);
         jPanel1.add(label);
+        */
         
-        
-        }
    
+     //jPanel1.setLayout(new GridLayout(20,10));
+     
+        
+        
+        /*jPanel1.add(cadrado1.IblCadrado);
+        jPanel1.setLayout(null);
+        jPanel1.repaint();
+        jPanel1.revalidate();*/
+       
+       xerarNovaFicha();
+     
+       
         
        
     }
-
+       
+ 
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -135,3 +180,4 @@ public class Xogo extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
+
