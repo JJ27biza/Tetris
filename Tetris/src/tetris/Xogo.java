@@ -8,14 +8,14 @@ import java.util.ArrayList;
  */
 public class Xogo {
 
-    final int LADO_CADRADO= 2;
+    final static int LADO_CADRADO= 1;
     final int MAX_Y=20;
-    final int MAX_X=20;
+    final int MAX_X=10;
     boolean pausa;
     int numeroLinas=MAX_Y-LADO_CADRADO;
     
     ArrayList<Cadrado>cadradosChan=new ArrayList<Cadrado>();
-
+    
     public void moverFichaDereita() {
 
     }
@@ -31,6 +31,9 @@ public class Xogo {
     public void rotarFicha() {
 
     }
+    public void xerarNovaFicha(){
+        FichaBarra novaFicha = new FichaBarra();
+    }
 
     public boolean ePosicionValida(int x, int y) {
         if (x > MAX_X || y > MAX_Y) {
@@ -44,8 +47,9 @@ public class Xogo {
         
     }
     
-    public boolean chocaFichaCoChan(){
-        getCoordenadas();
-        if(ficha)
-    }
+    /*public boolean chocaFichaCoChan(){
+        
+        if(cadrado.get(y)==y)
+            //codigo
+    }*/
 }

@@ -6,7 +6,8 @@ package tetris;
  * @author a22javiermm
  */
 public abstract class Ficha {
-    ArrayList<Cadrado>cadrados = new ArrayList<Cadrado>();
+    
+    
     
     public abstract boolean moverDereita();
     
