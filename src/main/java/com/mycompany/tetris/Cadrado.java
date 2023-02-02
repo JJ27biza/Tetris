@@ -12,22 +12,32 @@ import javax.swing.JLabel;
  * @author a22danielpc
  */
 public class Cadrado {
-    
+
     public int x;
-    
+
     public int y;
-    
+
     public Color corRecheo;
-    
+
     public JLabel IblCadrado;
-    
-    
-    public String getCoordenadas(){
-    
-       String coordenadas;
-       coordenadas=x+""+y;
-    
-    return coordenadas;
+
+    public Cadrado(int x, int y, Color corRecheo) {
+        this.x = x ;
+        this.y = y;
+        this.corRecheo = corRecheo;
+      
+        
     }
+
     
+    
+
+    public String getCoordenadas() {
+
+        String coordenadas;
+        coordenadas = x + "" + y;
+
+        return coordenadas;
+    }
+
 }
